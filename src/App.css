@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+:root {
+    /*Colors*/
+    --color-primary: #c69963;
+    --color-primary-dark: #b28451;
+    --color-secondary: #101d2c;
+    --color-light: #fcfcfc;
+    --color-grey-light-1: #f9f7f6;
+    --color-grey-light-2: #aaa;
+    --color-grey-dark-1: #54483a;
+    --color-grey-dark-2: #6d5d4b;
+    /*Fonts*/
+    --font-primary: 'Nunito', sans-serif;
+    --font-display: 'Josefin Sans', sans-serif;
+    /*Responsive Breakpoints*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-primary);
+    color: var(--color-grey-dark-2);
+    font-size: 62.5%;
+}
+.app {
+    background: red;
+    display: grid;
+    grid-template-rows: 100vh repear(7, min-content);
+    grid-template-columns:
+        [nav-start] 8rem [nav-end full-start] minmax(6rem, 1fr) [center-start] repeat(
+            8,
+            [col-start] minmax(min-content, 14rem) [col-end]
+        )
+        [center-end] minmax(6rem, 1fr) [full-end];
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Header*/
+.header {
+    background-color: var(--color-primary);
+    grid-column: nav-start / nav-end;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
