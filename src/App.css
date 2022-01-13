@@ -27,23 +27,47 @@ body {
     font-size: 62.5%;
 }
 .app {
-    background: red;
-    display: grid;
-    grid-template-rows: 100vh repear(7, min-content);
-    grid-template-columns:
-        [nav-start] 8rem [nav-end full-start] minmax(6rem, 1fr) [center-start] repeat(
-            8,
-            [col-start] minmax(min-content, 14rem) [col-end]
-        )
-        [center-end] minmax(6rem, 1fr) [full-end];
+    width: 100vw;
 }
 
 /*Header*/
 .header {
-    background-color: var(--color-primary);
-    grid-column: nav-start / nav-end;
-    grid-row: 1 / -1;
+    background: linear-gradient(var(--color-primary-dark), var(--color-primary));
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+.header a {
+    text-decoration: none;
+    display: block;
+    color: var(--color-secondary);
+    font-size: 1rem;
+}
+
+.logo {
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav a {
+    padding: 1rem;
+}
+
+.nav a .icon {
+    margin-right: 0.8rem;
+}
+.nav a:hover {
+    background-color: var(--color-grey-dark-2);
+    color: var(--color-light);
+}
+
+.home {
 }
