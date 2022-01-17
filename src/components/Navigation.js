@@ -1,5 +1,14 @@
 import React from 'react';
-import { FaUserAlt, FaSortAmountUp, FaTrello } from 'react-icons/fa';
+import {
+    FaUserAlt,
+    FaSortAmountUp,
+    FaTrello,
+    FaStar,
+    FaUniversity,
+    FaChartBar,
+    FaFileAlt,
+    FaFile,
+} from 'react-icons/fa';
 
 const Navigation = () => {
     return (
@@ -24,16 +33,29 @@ const Navigation = () => {
                     </a>
                 </li>
                 <li>
-                    <a href='#'>Skills</a>
+                    <a href='#'>
+                        <FaChartBar className='icon' />
+                        Skills
+                    </a>
                 </li>
                 <li>
-                    <a href='#'>Education</a>
+                    <a href='#'>
+                        <FaUniversity className='icon' />
+                        Education
+                    </a>
                 </li>
                 <li>
-                    <a href='#'>Awards</a>
+                    <a href='#'>
+                        {' '}
+                        <FaStar className='icon' />
+                        Awards
+                    </a>
                 </li>
                 <li>
-                    <a href='#'>Resume</a>
+                    <a href='#'>
+                        <FaFileAlt className='icon' />
+                        Resume
+                    </a>
                 </li>
             </ul>
         </nav>
