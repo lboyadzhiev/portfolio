@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { FaEnvelope, FaPhoneSquareAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
+
 const Home = () => {
     return (
         <div className='home'>
@@ -12,33 +14,32 @@ const Home = () => {
 export default Home;
 
 const HomeImg = () => {
-    return (
-        <div className='home-image'>
-            <h1>Be The Write Part of a Great Team!</h1>
-        </div>
-    );
+    return <div className='home__image'></div>;
 };
 
 const Contacts = () => {
     return (
-        <div className='home-personal'>
-            <h3 className='heading-3 heding-3--dark'>Contacts</h3>
+        <div className='home__personal'>
             <div className='home__responsive'>
                 <div className='home__details'>
+                    <FaEnvelope className='home__icon' />
                     <h4 className='heading-4 heading-4--light'>l.boyadzhievv@gmail.com</h4>
                 </div>
 
                 <div className='home__details'>
+                    <FaPhoneSquareAlt className='home__icon' />
                     <h4 className='heading-4 heading-4--light'>+359893522488</h4>
                 </div>
 
                 <div className='home__details'>
+                    <FaGithub className='home__icon' />
                     <a href='#' className='heading-4 heading-4--light'>
                         github.com
                     </a>
                 </div>
 
                 <div className='home__details'>
+                    <FaLinkedin className='home__icon' />
                     <a href='#' className='heading-4 heading-4--light'>
                         linkenIn.com
                     </a>

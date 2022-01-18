@@ -1,7 +1,15 @@
 import React from 'react';
 
-import Logo from './Logo';
-import Navigation from './Navigation';
+import {
+    FaUserAlt,
+    FaSortAmountUp,
+    FaTrello,
+    FaStar,
+    FaUniversity,
+    FaChartBar,
+    FaFileAlt,
+    FaFile,
+} from 'react-icons/fa';
 
 const Header = () => {
     return (
@@ -14,4 +22,68 @@ const Header = () => {
     );
 };
 
+const Logo = () => {
+    return (
+        <div className='logo'>
+            <div className='name'>
+                <a href='#'>
+                    <h3>Lachezar Boyadzhiev</h3>
+                    <span>Front End Developer</span>
+                </a>
+            </div>
+        </div>
+    );
+};
+
+const Navigation = () => {
+    return (
+        <nav className='nav'>
+            <ul>
+                <li>
+                    <a href='#'>
+                        <FaUserAlt className='icon' />
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <FaSortAmountUp className='icon' />
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <FaTrello className='icon' />
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <FaChartBar className='icon' />
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <FaUniversity className='icon' />
+                        Education
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        {' '}
+                        <FaStar className='icon' />
+                        Awards
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <FaFileAlt className='icon' />
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    );
+};
 export default Header;

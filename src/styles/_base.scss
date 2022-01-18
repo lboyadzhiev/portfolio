@@ -10,3 +10,8 @@ body {
     color: $color-grey-dark-2;
     font-size: 62.5%;
 }
+
+.main {
+    width: calc(100vw - 10rem);
+    margin-left: 10rem;
+}

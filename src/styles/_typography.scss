@@ -1,0 +1,88 @@
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+    color: $color-secondary;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 2.5rem;
+    color: $color-grey-light-1;
+    line-height: 1;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+    padding: 2rem;
+    text-transform: uppercase;
+    color: $color-secondary;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+.heading-3 {
+    @extend %heading;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    line-height: 1.8;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-secondary;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $bp-large) {
+        font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 2.2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.8rem;
+    }
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.2rem;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.subheading {
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 2.2rem;
+    }
+}
+
+.img-heading {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
