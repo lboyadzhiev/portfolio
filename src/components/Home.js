@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { FaEnvelope, FaPhoneSquareAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneSquareAlt, FaGithub, FaLinkedin, FaBars } from 'react-icons/fa';
 
 const Home = () => {
     return (
         <div className='home'>
             <HomeImg />
+            <FaBars className='menuIcon' />
             <Contacts />
         </div>
     );

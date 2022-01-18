@@ -61,3 +61,22 @@
         }
     }
 }
+
+.menuIcon {
+    font-size: 2.2rem;
+    color: $color-light;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: none;
+
+    &:hover {
+        font-size: 2.6rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        display: block;
+    }
+}
