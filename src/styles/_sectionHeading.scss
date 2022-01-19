@@ -1,0 +1,10 @@
+.section-heading {
+    background: linear-gradient($color-primary, $color-primary-dark);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+
+    @media only screen and(max-width: $bp-medium) {
+        height: 4rem;
+    }
+}
