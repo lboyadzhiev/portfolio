@@ -34,13 +34,19 @@
         &--1 {
             right: 1.7rem;
             top: 2rem;
+
+            @media only screen and (max-width: $bp-large) {
+                right: 2rem;
+            }
         }
 
         &--2 {
             left: 20%;
             top: 8rem;
-            // right: 0;
-            // top: 2rem;
+            @media only screen and (max-width: $bp-large) {
+                left: 0%;
+                top: 6rem;
+            }
         }
 
         &--3 {

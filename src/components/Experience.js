@@ -5,7 +5,9 @@ import Heading from './SectionHeading';
 const Experience = () => {
     return (
         <div className='experience'>
-            <Heading />
+            <Heading>
+                <h2 className='heading-2 heading-2--dark'>Experience</h2>
+            </Heading>
             <Items />
         </div>
     );
@@ -22,7 +24,7 @@ const Items = () => {
 const Item = () => {
     return (
         <div className='experience__item'>
-            <div className='heading-3 experience__Heading'>
+            <div className='heading-3 experience__heading'>
                 <h2 className='experience__name'>Pavaj, Plovdiv</h2>
                 <h3 className='heading-3 experience__position'>Sous-chef</h3>
             </div>

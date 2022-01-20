@@ -1,0 +1,73 @@
+.experience {
+    height: min-content;
+    width: 100%;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 100vw;
+    }
+
+    &__list {
+        background-color: $color-grey-light-1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item {
+        background-color: $color-light;
+        margin: 2rem;
+        width: 80%;
+        height: min-content;
+        padding: 4rem 2.5rem;
+        font-size: 1.5rem;
+        box-shadow: $main-shadow;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 85%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 3rem;
+            width: 90%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 1rem;
+            margin: 0.5rem;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-secondary;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__name {
+        font-size: 2rem;
+    }
+
+    &__description {
+        padding: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 1rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__responsability {
+        font-size: 1.2rem;
+        margin: 1rem 4rem;
+        word-spacing: 0.5rem;
+
+        @media only screen and (max-width: $bp-small) {
+            margin: 0;
+            padding: 2rem;
+        }
+    }
+}
