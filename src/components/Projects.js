@@ -1,5 +1,7 @@
 import React from 'react';
 import Heading from './SectionHeading';
+import { FaGithub, FaAngleUp } from 'react-icons/fa';
+import soccer from '../img/soccer.png';
 
 const Projects = () => {
     return (
@@ -24,8 +26,11 @@ const Item = () => {
     return (
         <div className='project'>
             <div className='project__side project__side--front'>
-                <img src='' alt='' className='project__img' />
-                <ProjectHeading />
+                <img src={soccer} alt='' className='project__img' />
+                <div className='project__heading'>
+                    <h2 class='heading-4'>Pocket Football</h2>
+                    <FaAngleUp className='project__icon' />
+                </div>
                 <p className='project__text'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iste autem nihil,
                     tenetur vitae nemo veritatis modi qui ipsum. Excepturi, mollitia. Consectetur
@@ -34,8 +39,10 @@ const Item = () => {
                     asperiores pariatur blanditiis excepturi doloremque eos labore voluptatum.
                 </p>
             </div>
-            <div className='project__side project__side-back'>
-                <ProjectHeading />
+            <div className='project__side project__side--back'>
+                <div className='project__heading'>
+                    <h2 class='heading-4'>Pocket Football</h2>
+                </div>
                 <div className='project__details'>
                     <ul>
                         <li>SASS CSS frontend</li>
@@ -45,19 +52,10 @@ const Item = () => {
                     </ul>
                     <span className='project__source'>View Source</span>
                     <div className='project__link'>
-                        <i className='fab fa-github'></i>
+                        <FaGithub />
                     </div>
                 </div>
             </div>
-        </div>
-    );
-};
-
-const ProjectHeading = () => {
-    return (
-        <div className='project__heading'>
-            <h2 class='heading-4'>Pocket Football</h2>
-            <i class='fas fa-ellipsis-v     project__icon'></i>
         </div>
     );
 };
