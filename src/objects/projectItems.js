@@ -6,4 +6,18 @@ export const projects = [
         name: 'Pocket Football',
         description: 'Football App for miny playgrounds!!!',
     },
+
+    {
+        id: 'projectTwo',
+        img: soccer,
+        name: 'Pocket Football',
+        description: 'Football App for miny playgrounds!!!',
+    },
+
+    {
+        id: 'projectThree',
+        img: soccer,
+        name: 'Pocket Football',
+        description: 'Football App for miny playgrounds!!!',
+    },
 ];

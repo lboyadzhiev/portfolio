@@ -1,27 +1,30 @@
 .section-projects {
     height: min-content;
+    width: 100%;
 }
 
 .projects {
     background-color: $color-grey-light-1;
     height: 100%;
-    width: 100%;
     padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     @media only screen and (max-width: $bp-medium) {
         padding-top: 0;
         padding-bottom: 3rem;
+        justify-content: center;
     }
 }
 .project {
     margin-top: 3rem;
-    width: 30%;
+    width: 17rem;
     height: 25rem;
     position: relative;
 
     @media only screen and (max-width: $bp-medium) {
-        font-size: 2.2rem;
-        width: 70%;
+        font-size: 1.6rem;
     }
 
     &__side {
