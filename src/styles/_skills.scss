@@ -1,0 +1,35 @@
+.section-skills {
+    height: min-content;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__img {
+        display: flex;
+        flex-direction: column;
+
+        & img {
+            align-self: center;
+            width: 7rem;
+            height: 7rem;
+            display: block;
+            object-fit: fill;
+        }
+
+        & span {
+            display: block;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+.subSkills {
+    display: flex;
+    justify-content: space-around;
+}

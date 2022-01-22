@@ -112,14 +112,14 @@
     }
 
     &__icon {
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: $color-secondary;
         cursor: pointer;
         transition: all 0.3s;
         backface-visibility: hidden;
 
         &:hover {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
     }
 
