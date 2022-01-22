@@ -8,7 +8,7 @@ import restaurant from '../img/restaurant.jpeg';
 const About = () => {
     return (
         <div className='about'>
-            <Heading />
+            <Heading name='About' />
             <Content />
         </div>
     );

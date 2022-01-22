@@ -1,12 +1,13 @@
 import React from 'react';
 import Heading from './SectionHeading';
-import { FaGithub, FaAngleUp } from 'react-icons/fa';
-import soccer from '../img/soccer.png';
+import { FaGithub, FaGripVertical, FaTimes } from 'react-icons/fa';
+
+import { projects } from '../objects/projectItems';
 
 const Projects = () => {
     return (
         <div className='section-projects'>
-            <Heading />
+            <Heading name='Projects' />
             <Items />
         </div>
     );
@@ -16,32 +17,31 @@ export default Projects;
 
 const Items = () => {
     return (
-        <div>
-            <Item />
+        <div className='projects'>
+            {projects.map((item) => {
+                return <Item key={item.id} {...item} />;
+            })}
         </div>
     );
 };
 
-const Item = () => {
+const Item = (props) => {
+    const { img, name, description } = props;
+
     return (
         <div className='project'>
             <div className='project__side project__side--front'>
-                <img src={soccer} alt='' className='project__img' />
+                <img src={img} alt='' className='project__img' />
                 <div className='project__heading'>
-                    <h2 class='heading-4'>Pocket Football</h2>
-                    <FaAngleUp className='project__icon' />
+                    <h2>{name}</h2>
+                    <FaGripVertical className='project__icon' />
                 </div>
-                <p className='project__text'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iste autem nihil,
-                    tenetur vitae nemo veritatis modi qui ipsum. Excepturi, mollitia. Consectetur
-                    numquam quibusdam assumenda aperiam modi inventore. Totam, vero. Perspiciatis
-                    voluptatum amet laudantium magnam, eius et optio. Ipsam, et expedita possimus
-                    asperiores pariatur blanditiis excepturi doloremque eos labore voluptatum.
-                </p>
+                <p className='project__text'>{description}</p>
             </div>
             <div className='project__side project__side--back'>
                 <div className='project__heading'>
-                    <h2 class='heading-4'>Pocket Football</h2>
+                    <h2 className='heading-4'>{name}</h2>
+                    <FaTimes className='project__icon' />
                 </div>
                 <div className='project__details'>
                     <ul>
@@ -51,9 +51,9 @@ const Item = () => {
                         <li>responsive menu with CSS and JS</li>
                     </ul>
                     <span className='project__source'>View Source</span>
-                    <div className='project__link'>
-                        <FaGithub />
-                    </div>
+                </div>
+                <div className='project__link'>
+                    <FaGithub className='link-icon' />
                 </div>
             </div>
         </div>

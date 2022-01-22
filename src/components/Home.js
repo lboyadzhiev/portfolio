@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { FaEnvelope, FaPhoneSquareAlt, FaGithub, FaLinkedin, FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
+
+import { contacts } from '../objects/contacts';
 
 const Home = () => {
     return (
@@ -22,30 +24,21 @@ const Contacts = () => {
     return (
         <div className='home__personal'>
             <div className='home__responsive'>
-                <div className='home__details'>
-                    <FaEnvelope className='home__icon' />
-                    <h4 className='heading-4 heading-4--light'>l.boyadzhievv@gmail.com</h4>
-                </div>
-
-                <div className='home__details'>
-                    <FaPhoneSquareAlt className='home__icon' />
-                    <h4 className='heading-4 heading-4--light'>+359893522488</h4>
-                </div>
-
-                <div className='home__details'>
-                    <FaGithub className='home__icon' />
-                    <a href='#' className='heading-4 heading-4--light'>
-                        github.com
-                    </a>
-                </div>
-
-                <div className='home__details'>
-                    <FaLinkedin className='home__icon' />
-                    <a href='#' className='heading-4 heading-4--light'>
-                        linkenIn.com
-                    </a>
-                </div>
+                {contacts.map((item) => {
+                    return <ContactItem key={item.id} {...item} />;
+                })}
             </div>
+        </div>
+    );
+};
+
+const ContactItem = (props) => {
+    const { icon, content } = props;
+
+    return (
+        <div className='home__details'>
+            {icon}
+            <h4 className='heading-4 heading-4--light'>{content}</h4>
         </div>
     );
 };
