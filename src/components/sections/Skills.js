@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Heading from './SectionHeading';
+import Heading from '../utilities/SectionHeading';
 
-import { items } from '../data/skills';
+import { items } from '../../data/skills';
 
 const Skills = () => {
     return (

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Heading from './SectionHeading';
-import coding from '../img/coding.jpeg';
-import graduation from '../img/graduation.jpeg';
-import restaurant from '../img/restaurant.jpeg';
+import Heading from '../utilities/SectionHeading';
+import coding from '../../img/coding.jpeg';
+import graduation from '../../img/graduation.jpeg';
+import restaurant from '../../img/restaurant.jpeg';
 
 const About = () => {
     return (

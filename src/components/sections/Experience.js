@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Heading from './SectionHeading';
+import Heading from '../utilities/SectionHeading';
 
 const Experience = () => {
     return (

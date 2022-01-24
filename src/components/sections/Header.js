@@ -8,7 +8,6 @@ import {
     FaUniversity,
     FaChartBar,
     FaFileAlt,
-    FaFile,
 } from 'react-icons/fa';
 
 const Header = () => {

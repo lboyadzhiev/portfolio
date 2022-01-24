@@ -1,9 +1,10 @@
 import React from 'react';
-import Home from './Home';
-import About from './About';
-import Experience from './Experience';
-import Projects from './Projects';
-import Skills from './Skills';
+import Home from './sections/Home';
+import About from './sections/About';
+import Experience from './sections/Experience';
+import Projects from './sections/Projects';
+import Skills from './sections/Skills';
+import Education from './sections/Education';
 
 const Main = () => {
     return (
@@ -13,6 +14,7 @@ const Main = () => {
             <Experience />
             <Projects />
             <Skills />
+            <Education />
         </div>
     );
 };

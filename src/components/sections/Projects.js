@@ -1,8 +1,8 @@
 import React from 'react';
-import Heading from './SectionHeading';
+import Heading from '../utilities/SectionHeading';
 import { FaGithub, FaGripVertical, FaTimes } from 'react-icons/fa';
 
-import { projects } from '../data/projectItems';
+import { projects } from '../../data/projectItems';
 
 const Projects = () => {
     return (
