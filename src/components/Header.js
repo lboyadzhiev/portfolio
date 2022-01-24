@@ -71,7 +71,6 @@ const Navigation = () => {
                 </li>
                 <li>
                     <a href='#'>
-                        {' '}
                         <FaStar className='icon' />
                         Awards
                     </a>

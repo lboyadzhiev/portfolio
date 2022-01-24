@@ -4,6 +4,7 @@ import sass from '../img/sass.png';
 import js from '../img/js.png';
 import nodejs from '../img/nodejs.jpeg';
 import jsx from '../img/jsx.png';
+import react from '../img/react.png';
 
 export const items = [
     {
@@ -50,6 +51,10 @@ export const items = [
             {
                 name: 'node-js',
                 img: nodejs,
+            },
+            {
+                name: 'react',
+                img: react,
             },
         ],
     },

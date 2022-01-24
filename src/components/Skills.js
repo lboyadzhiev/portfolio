@@ -2,8 +2,7 @@ import React from 'react';
 
 import Heading from './SectionHeading';
 
-import sass from '../img/sass.png';
-import { items } from '../objects/skills';
+import { items } from '../data/skills';
 
 const Skills = () => {
     return (

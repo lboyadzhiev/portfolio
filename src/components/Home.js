@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FaBars } from 'react-icons/fa';
 
-import { contacts } from '../objects/contacts';
+import { contacts } from '../data/contacts';
 
 const Home = () => {
     return (

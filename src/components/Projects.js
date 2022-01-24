@@ -2,7 +2,7 @@ import React from 'react';
 import Heading from './SectionHeading';
 import { FaGithub, FaGripVertical, FaTimes } from 'react-icons/fa';
 
-import { projects } from '../objects/projectItems';
+import { projects } from '../data/projectItems';
 
 const Projects = () => {
     return (
