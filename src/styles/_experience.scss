@@ -6,6 +6,26 @@
         width: 100vw;
     }
 
+    &__item {
+        background-color: $color-light;
+        margin: 2rem;
+        width: 80%;
+        height: min-content;
+        padding: 4rem 2.5rem;
+        font-size: 1.5rem;
+        box-shadow: $main-shadow;
+        position: relative;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 85%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 3rem;
+            width: 90%;
+        }
+    }
+
     &__list {
         background-color: $color-grey-light-1;
         display: flex;

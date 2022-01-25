@@ -1,0 +1,30 @@
+.item {
+    @media only screen and (max-width: $bp-small) {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-secondary;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__description {
+        padding: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 1rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__time {
+        font-size: 1rem;
+        position: absolute;
+        bottom: 2rem;
+    }
+}

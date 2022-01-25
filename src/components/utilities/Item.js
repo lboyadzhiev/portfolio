@@ -12,6 +12,7 @@ function Item(props) {
                     <li></li>
                 </ul>
             </div>
+            <div className='item__time'>2020 / Sofia, Bulgaria</div>
         </div>
     );
 }

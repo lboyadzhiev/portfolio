@@ -28,7 +28,7 @@ const SkillsList = () => {
 const Skill = (props) => {
     const { name, sub } = props;
     return (
-        <div className='item'>
+        <div className='experience__item'>
             <div className='item__heading'>
                 <h3 className='heading-3'>{name}</h3>
             </div>
