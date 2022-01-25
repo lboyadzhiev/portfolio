@@ -4,9 +4,9 @@
 
 .skills {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
     &__img {
         display: flex;
@@ -32,4 +32,5 @@
 .subSkills {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
