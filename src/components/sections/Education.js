@@ -2,6 +2,7 @@ import React from 'react';
 
 import Heading from '../utilities/SectionHeading';
 import Item from '../utilities/Item';
+import { educations } from '../../data/education';
 
 const Education = () => {
     return (
@@ -17,8 +18,9 @@ export default Education;
 const Items = () => {
     return (
         <div className='education'>
-            <Item className='education__item' />
-            <Item className='education__item' />
+            {educations.map((item) => {
+                return <Item className='education__item' key={item.id} {...item} />;
+            })}
         </div>
     );
 };
