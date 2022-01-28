@@ -11,20 +11,8 @@
     flex-wrap: wrap;
 
     &__item {
-        background-color: $color-light;
-        margin: 2rem;
         width: 43%;
         height: 25rem;
         padding: 2rem;
-        font-size: 1.5rem;
-        box-shadow: $main-shadow;
-        position: relative;
-        @media only screen and (max-width: $bp-large) {
-            width: 80%;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-            width: 90%;
-        }
     }
 }

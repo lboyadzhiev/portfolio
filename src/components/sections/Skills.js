@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Heading from '../utilities/SectionHeading';
+import Card from '../utilities/Card';
 
 import { items } from '../../data/skills';
 
@@ -28,7 +29,7 @@ const SkillsList = () => {
 const Skill = (props) => {
     const { name, sub } = props;
     return (
-        <div className='experience__item'>
+        <Card className='experience__item'>
             <div className='item__heading'>
                 <h3 className='heading-3'>{name}</h3>
             </div>
@@ -37,7 +38,7 @@ const Skill = (props) => {
                     return <SubSkill key={index} {...subItem} />;
                 })}
             </div>
-        </div>
+        </Card>
     );
 };
 
