@@ -29,11 +29,10 @@ const TextContent = () => {
     return (
         <div className='about__text'>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quos totam. Maxime
-                quidem eos quam alias praesentium at architecto, adipisci quis maiores cum officiis
-                exercitationem, laudantium dolores ab iure illum repudiandae. Facere quos, sunt,
-                consequatur provident pariatur sint quaerat eveniet hic odit officiis minima aliquid
-                deleniti expedita, voluptate perferendis veritatis.
+                Seeking for junior or intern front-end developer position. I Start my journey in the
+                IT field 2 years ago. I started with learning programming basics with JS. By now I
+                have a fundamental knowledge of HTML, CSS, JS, and keep expanding my skills set by
+                learning REACT and NODE.JS.
             </p>
         </div>
     );
