@@ -34,6 +34,8 @@ const Logo = () => {
     );
 };
 
+export default Header;
+
 const Navigation = () => {
     return (
         <nav className='nav'>
@@ -84,4 +86,3 @@ const Navigation = () => {
         </nav>
     );
 };
-export default Header;

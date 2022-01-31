@@ -5,6 +5,7 @@ import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import Education from './sections/Education';
+import Awards from './sections/Awards';
 
 const Main = () => {
     return (
@@ -15,6 +16,7 @@ const Main = () => {
             <Projects />
             <Skills />
             <Education />
+            <Awards />
         </div>
     );
 };

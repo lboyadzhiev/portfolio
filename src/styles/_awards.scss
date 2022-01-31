@@ -1,0 +1,65 @@
+.awards {
+    height: min-content;
+
+    @media only screen and (max-width: $bp-large) {
+        padding-top: 9.5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        height: 100vh;
+    }
+
+    &__gallery {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(10, 5vw);
+        gap: 2rem;
+        padding: 1.5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 95%;
+            padding: 7rem 0;
+        }
+    }
+
+    &__item {
+        box-shadow: $main-shadow;
+        cursor: pointer;
+        overflow: hidden;
+
+        &--1 {
+            grid-row: 1 / span 5;
+            grid-column: 1 / span 4;
+        }
+        &--2 {
+            grid-row: 1 / span 5;
+            grid-column: 5 / -1;
+        }
+        &--3 {
+            grid-row: 6 / -1;
+            grid-column: 1 / span 2;
+        }
+
+        &--4 {
+            grid-row: 6 / -1;
+            grid-column: 3 / span 2;
+        }
+
+        &--5 {
+            grid-row: 6 / -1;
+            grid-column: 5 / span 2;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

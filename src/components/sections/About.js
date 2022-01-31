@@ -14,6 +14,8 @@ const About = () => {
     );
 };
 
+export default About;
+
 const Content = () => {
     return (
         <div className='about__content'>
@@ -46,4 +48,3 @@ const ImageContent = () => {
         </div>
     );
 };
-export default About;
