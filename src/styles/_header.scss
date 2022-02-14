@@ -9,6 +9,7 @@
 
     @media only screen and (max-width: $bp-small) {
         transform: translateX(-10rem);
+        top: 4rem;
     }
 
     & a {
@@ -41,4 +42,8 @@
             color: $color-light;
         }
     }
+}
+
+.header-show {
+    transform: translateX(0);
 }

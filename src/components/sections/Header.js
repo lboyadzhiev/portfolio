@@ -13,7 +13,7 @@ import {
 const Header = () => {
     return (
         <div>
-            <div className='header'>
+            <div className='header header-show'>
                 <Logo />
                 <Navigation />
             </div>

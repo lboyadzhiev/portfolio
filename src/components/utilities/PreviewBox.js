@@ -23,7 +23,7 @@ const PreviewBox = (props) => {
                     <div className='preview-box__slide preview-box__slide--prev'>
                         <FaAngleLeft className='prevBtn' />
                     </div>
-                    <div class='preview-box__slide preview-box__slide--next'>
+                    <div className='preview-box__slide preview-box__slide--next'>
                         <FaAngleRight className='nextBtn' />
                     </div>
                     <img src={basic} alt='' className='preview-box__img' />

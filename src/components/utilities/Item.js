@@ -2,7 +2,8 @@ import React from 'react';
 
 import Card from './Card';
 function Item(props) {
-    const { name, subject, desc, date } = props;
+    const { name, subject, description, date } = props;
+
     return (
         <Card className={props.className}>
             <div className='item__heading'>
