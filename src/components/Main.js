@@ -3,7 +3,7 @@ import Home from './sections/Home/Home';
 import About from './sections/About/About';
 import Experience from './sections/Experience/Experience';
 import Projects from './sections/Projects/Projects';
-import Skills from './sections/Skills';
+import Skills from './sections/Skills/Skills';
 import Education from './sections/Education/Education';
 import Awards from './sections/Awards/Awards';
 
