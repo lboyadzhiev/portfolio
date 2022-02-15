@@ -5,7 +5,7 @@ import Experience from './sections/Experience/Experience';
 import Projects from './sections/Projects/Projects';
 import Skills from './sections/Skills';
 import Education from './sections/Education';
-import Awards from './sections/Awards';
+import Awards from './sections/Awards/Awards';
 
 const Main = () => {
     return (
