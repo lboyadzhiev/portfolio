@@ -4,7 +4,7 @@ import About from './sections/About/About';
 import Experience from './sections/Experience/Experience';
 import Projects from './sections/Projects/Projects';
 import Skills from './sections/Skills';
-import Education from './sections/Education';
+import Education from './sections/Education/Education';
 import Awards from './sections/Awards/Awards';
 
 const Main = () => {
