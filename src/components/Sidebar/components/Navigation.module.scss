@@ -1,0 +1,31 @@
+.nav {
+    height: 70%;
+    & ul {
+        height: 100%;
+
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    & li {
+        margin-top: 1rem;
+        min-width: 100%;
+    }
+
+    & a {
+        display: block;
+
+        padding: 1rem;
+
+        & .icon {
+            margin-right: 0.8rem;
+        }
+
+        &:hover {
+            background-color: #6d5d4b;
+            color: #fcfcfc;
+        }
+    }
+}

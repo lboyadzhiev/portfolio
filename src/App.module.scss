@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #6d5d4b;
+    font-size: 62.5%;
+}
+
+.app {
+    display: flex;
+}
