@@ -1,12 +1,13 @@
+@import '../../styles/varables';
 .mainWrapper {
     flex: 1;
     height: 100vh;
     border-right: 0.5px solid #e2dfdf;
-    background: linear-gradient(to bottom, #b28451, #c69963);
+    background: linear-gradient(to bottom, $color-primary-dark, $color-primary);
 
     & a {
         text-decoration: none;
-        color: #101d2c;
+        color: $color-secondary;
         font-size: 1rem;
     }
 }

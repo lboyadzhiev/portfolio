@@ -11,9 +11,14 @@ import React from 'react';
 import classes from './Main.module.scss';
 
 // components
+import HomePage from '../pages/Home/Index';
 
 const Main = () => {
-    return <div className={classes.main}></div>;
+    return (
+        <div className={classes.main}>
+            <HomePage />
+        </div>
+    );
 };
 
 export default Main;

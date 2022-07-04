@@ -1,3 +1,5 @@
+@import '../../../styles/varables';
+
 .nav {
     height: 70%;
     & ul {
@@ -24,8 +26,8 @@
         }
 
         &:hover {
-            background-color: #6d5d4b;
-            color: #fcfcfc;
+            background-color: $color-grey-dark-2;
+            color: $color-light;
         }
     }
 }

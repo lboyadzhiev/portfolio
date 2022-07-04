@@ -1,0 +1,25 @@
+@import '../../../../styles/varables';
+
+.mainWrapper {
+    background: $color-secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    width: 28%;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 1rem 2rem;
+        width: 40%;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

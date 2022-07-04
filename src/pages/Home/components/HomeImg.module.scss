@@ -1,0 +1,18 @@
+@import '../../../styles/varables';
+
+.image {
+    height: 100%;
+    width: 72%;
+    background-image: linear-gradient(rgba($color-secondary, 0.5), rgba($color-secondary, 0.2)),
+        url('https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (max-width: $bp-large) {
+        width: 60%;
+        padding-bottom: 0;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+    }
+}
