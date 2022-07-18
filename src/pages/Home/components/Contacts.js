@@ -8,7 +8,7 @@ import ContactItem from './ContactItem';
 
 // data
 
-import { contacts } from '../../../../data/contacts';
+import { contacts } from '../../../data/contacts';
 
 const Contacts = () => {
     return (

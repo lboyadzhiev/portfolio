@@ -8,7 +8,7 @@ import classes from './Index.module.scss';
 
 // components
 import HomeImg from './components/HomeImg';
-import Contacts from './components/contacts/Contacts';
+import Contacts from './components/Contacts';
 
 const Index = () => {
     return (
