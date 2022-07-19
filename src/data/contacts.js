@@ -10,7 +10,7 @@ export const contacts = [
     {
         id: 2,
         icon: <FaPhoneSquareAlt className='home__icon' />,
-        content: '+359893522488',
+        content: '+359 893 522 488',
     },
     {
         id: 3,
@@ -21,6 +21,6 @@ export const contacts = [
     {
         id: 4,
         icon: <FaLinkedin className='home__icon' />,
-        content: 'linkenIn.com',
+        content: 'LinkedIn.com',
     },
 ];

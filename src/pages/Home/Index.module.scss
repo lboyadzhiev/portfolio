@@ -10,3 +10,12 @@
         flex-direction: column;
     }
 }
+
+.menuIcon {
+    position: absolute;
+    font-size: 2rem;
+    color: $color-light;
+    right: 2rem;
+    top: 2rem;
+    display: none;
+}

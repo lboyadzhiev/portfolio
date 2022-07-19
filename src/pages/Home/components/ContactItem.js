@@ -8,8 +8,8 @@ const ContactItem = (props) => {
     const { icon, content } = props;
     return (
         <div className={classes.mainWrapper}>
-            {icon}
-            <h4 className={typography.headingFour}>{content}</h4>
+            <div className={classes.icon}> {icon}</div>
+            <h4 className={'heading-4 heading-4--light'}>{content}</h4>
         </div>
     );
 };

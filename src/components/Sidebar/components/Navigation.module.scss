@@ -18,16 +18,18 @@
 
     & a {
         display: block;
-
         padding: 1rem;
+        transition: all 0.3s;
 
         & .icon {
             margin-right: 0.8rem;
         }
 
         &:hover {
-            background-color: $color-grey-dark-2;
+            background-color: $color-secondary;
+            box-shadow: $main-shadow;
             color: $color-light;
+            font-size: 1.2rem;
         }
     }
 }
